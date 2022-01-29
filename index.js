@@ -1,8 +1,7 @@
 const express = require('express');
 const axios = require('axios');
 const app = express()
-const port = 3000
-
+const PORT = process.env.PORT ||5000;
 PUBLIC_API_KEY = '1e1e4f04330a494b8a8da5572434153b'
 
 
@@ -17,5 +16,5 @@ app.get('/news', async (req, res)=> {
     res.send(request.data)
   })
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`Example app listening on port ${PORT}`)
 })
