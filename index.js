@@ -3,7 +3,7 @@ const axios = require('axios');
 const PORT = process.env.PORT ||5000;
 const app = express();
 var cors = require('cors');
-PUBLIC_API_KEY = '1e1e4f04330a494b8a8da5572434153b'
+PUBLIC_API_KEY = '03ed8523b12b49dfbefb1cff042b9798'
 
 app.use(cors());
 app.get('/news', async (req, res)=> {
