@@ -6,6 +6,8 @@ PUBLIC_API_KEY = '1e1e4f04330a494b8a8da5572434153b'
 
 
 app.get('/news', async (req, res)=> {
+    res.setHeader('Access-Control-Allow-Origin', 'https://all-in-one-news.vercel.app');
+    res.setHeader('Access-Control-Allow-Methods', 'GET');
     var country = req.query['country'];
     var category = req.query['category'];
     var page = req.query['page'];
